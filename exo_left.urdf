@@ -1,0 +1,347 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/30647899d0efca800f6a0b61/w/6367c32608b1610b986f4220/e/82448bde0644faba4511c9d2 -->
+<robot name="my-robot">
+  <link name="base_link"/>
+  <joint name="base_to_shoulder_pitch" type="fixed">
+    <origin xyz="-0.600072 -0.15 0.3178" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="shoulder_pitch"/>
+  </joint>
+  <!-- Link shoulder_pitch -->
+  <link name="shoulder_pitch">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part shoulder -->
+    <visual>
+      <origin xyz="-0.319917 -0.188041 -0.0739695" rpy="1.73941e-11 -2.77556e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder.stl"/>
+      </geometry>
+      <material name="shoulder_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.319917 -0.188041 -0.0739695" rpy="1.73941e-11 -2.77556e-17 -3.14159"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shoulder_2 -->
+    <visual>
+      <origin xyz="-0.319917 -0.188041 -0.0739695" rpy="1.73941e-11 1.7367e-11 3.14159"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__2.stl"/>
+      </geometry>
+      <material name="shoulder_2_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.319917 -0.188041 -0.0739695" rpy="1.73941e-11 1.7367e-11 3.14159"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shoulder_yaw -->
+  <link name="shoulder_yaw">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part shoulder_3 -->
+    <visual>
+      <origin xyz="0.337111 0.085895 0.174004" rpy="1.5708 4.85145e-12 -5.68355e-18"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__3.stl"/>
+      </geometry>
+      <material name="shoulder_3_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.337111 0.085895 0.174004" rpy="1.5708 4.85145e-12 -5.68355e-18"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shoulder_roll -->
+  <link name="shoulder_roll">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part shoulder_4 -->
+    <visual>
+      <origin xyz="0.188947 -0.0970719 0.361641" rpy="-1.62911 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__4.stl"/>
+      </geometry>
+      <material name="shoulder_4_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.188947 -0.0970719 0.361641" rpy="-1.62911 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link elbow_flex -->
+  <link name="elbow_flex">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part shoulder_5 -->
+    <visual>
+      <origin xyz="0.358661 0.193894 -0.0611064" rpy="1.78388e-17 2.53007e-17 3.50616e-18"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__5.stl"/>
+      </geometry>
+      <material name="shoulder_5_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.358661 0.193894 -0.0611064" rpy="1.78388e-17 2.53007e-17 3.50616e-18"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/shoulder__5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link wrist_roll -->
+  <link name="wrist_roll">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part wrist -->
+    <visual>
+      <origin xyz="0.370176 -0.154734 0.203442" rpy="1.5708 2.12442e-12 0.0687143"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist.stl"/>
+      </geometry>
+      <material name="wrist_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.370176 -0.154734 0.203442" rpy="1.5708 2.12442e-12 0.0687143"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link end_effector -->
+  <link name="end_effector">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part wrist_2 -->
+    <visual>
+      <origin xyz="0.189619 0.17695 -0.583114" rpy="0.0540298 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__2.stl"/>
+      </geometry>
+      <material name="wrist_2_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.189619 0.17695 -0.583114" rpy="0.0540298 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wrist_3 -->
+    <visual>
+      <origin xyz="0.189345 0.176964 -0.583114" rpy="0.0540298 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__3.stl"/>
+      </geometry>
+      <material name="wrist_3_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.189345 0.176964 -0.583114" rpy="0.0540298 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wrist_4 -->
+    <visual>
+      <origin xyz="0.192193 0.173682 -0.583216" rpy="0.0688698 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__4.stl"/>
+      </geometry>
+      <material name="wrist_4_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.192193 0.173682 -0.583216" rpy="0.0688698 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wrist_5 -->
+    <visual>
+      <origin xyz="0.189768 0.177109 -0.583122" rpy="-1.57084 1.57074 -1.62483"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__5.stl"/>
+      </geometry>
+      <material name="wrist_5_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.189768 0.177109 -0.583122" rpy="-1.57084 1.57074 -1.62483"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part wrist_6 -->
+    <visual>
+      <origin xyz="0.189348 0.177132 -0.583124" rpy="-1.57084 1.57074 -1.62483"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__6.stl"/>
+      </geometry>
+      <material name="wrist_6_material">
+        <color rgba="0.964706 0.964706 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.189348 0.177132 -0.583124" rpy="-1.57084 1.57074 -1.62483"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/wrist__6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part z -->
+    <visual>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/z.stl"/>
+      </geometry>
+      <material name="z_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/z.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part y -->
+    <visual>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/y.stl"/>
+      </geometry>
+      <material name="y_material">
+        <color rgba="0.372549 0.654902 0.239216 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/y.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_4 -->
+    <visual>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/part_4.stl"/>
+      </geometry>
+      <material name="part_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/part_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part x -->
+    <visual>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/x.stl"/>
+      </geometry>
+      <material name="x_material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0115311 0.0274691 0.0397266" rpy="3.08756 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://meshes_exo_left/x.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from wrist_roll to end_effector -->
+  <joint name="wrist_roll" type="revolute">
+    <origin xyz="-0.224547 -0.0154537 0.0169453" rpy="1.5708 0.139345 -1.50208"/>
+    <parent link="wrist_roll"/>
+    <child link="end_effector"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.716528" upper="0.854268"/>
+  </joint>
+  <!-- Joint from elbow_flex to wrist_roll -->
+  <joint name="elbow_flex" type="revolute">
+    <origin xyz="-1.7424e-05 -0.00788072 -0.240892" rpy="-1.5708 2.53007e-17 3.50616e-18"/>
+    <parent link="elbow_flex"/>
+    <child link="wrist_roll"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.11591" upper="1.32755"/>
+  </joint>
+  <!-- Joint from shoulder_roll to elbow_flex -->
+  <joint name="shoulder_roll" type="revolute">
+    <origin xyz="-0.00144298 -0.0247172 0.00296278" rpy="-1.5708 -1.56793 -0.0583134"/>
+    <parent link="shoulder_roll"/>
+    <child link="elbow_flex"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.57366" upper="1.56793"/>
+  </joint>
+  <!-- Joint from shoulder_yaw to shoulder_roll -->
+  <joint name="shoulder_yaw" type="revolute">
+    <origin xyz="-0.0247593 7.34308e-15 -0.0202799" rpy="3.14159 -1.5708 0"/>
+    <parent link="shoulder_yaw"/>
+    <child link="shoulder_roll"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.290752" upper="1.62911"/>
+  </joint>
+  <!-- Joint from shoulder_pitch to shoulder_yaw -->
+  <joint name="shoulder_pitch" type="revolute">
+    <origin xyz="0.017217 -0.0139551 0.0119912" rpy="-1.5708 0.142264 -3.14159"/>
+    <parent link="shoulder_pitch"/>
+    <child link="shoulder_yaw"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.18946" upper="1.254"/>
+  </joint>
+  <link name="ee"/>
+
+  <joint name="end_effector_to_ee" type="fixed">
+    <parent link="end_effector"/>
+    <child link="ee"/>
+    <!-- rotate tcp here -->
+    <origin xyz="0 0 0" rpy="1.5708 -1.5708 1.5708"/>
+  </joint>
+</robot>
