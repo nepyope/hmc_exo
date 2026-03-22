@@ -4,7 +4,9 @@ Whole-body control exoskeleton: printed structure, hall-effect joints, joystick 
 
 ## Media
 
-**Demo (MP4):** [assets/video.mp4](assets/video.mp4)
+![Demo clip](assets/demo.gif)
+
+Full-quality video: [assets/video.mp4](assets/video.mp4)
 
 ![Homunculus exoskeleton hardware](assets/exo.png)
 
@@ -12,9 +14,9 @@ Whole-body control exoskeleton: printed structure, hall-effect joints, joystick 
 
 | Path | Contents |
 |------|----------|
-| [`assets/`](assets/) | Demo video and reference photos |
+| [`assets/`](assets/) | Demo GIF/MP4 and reference photos |
 | [`cad/`](cad/) | STEP assembly export |
 | [`docs/`](docs/) | BOM and build notes |
 | [`firmware/`](firmware/) | Arduino-style firmware (mux + analog reads) |
-| [`PCB/`](PCB/) | Board BOMs/gerbers and the [Martino joystick adapter](PCB/elec_martino_joystick_adapter) submodule |
+| [`PCB/`](PCB/) | Board BOMs/gerbers and the [joystick adapter](PCB/elec_martino_joystick_adapter) submodule |
 | [`urdf/`](urdf/) | Left/right robot descriptions (Onshape → URDF) |
