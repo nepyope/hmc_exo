@@ -2,13 +2,12 @@
 
 Whole-body control exoskeleton: printed structure, hall-effect joints, joystick input, and Arduino-side muxing for analog reads. This repo holds CAD (STEP), left/right URDF exports, PCB artifacts, firmware for the sensor mux, and a [bill of materials](docs/BOM.md).
 
-## Media
-
-![Demo clip](assets/demo.gif)
-
-Full-quality video: [assets/video.mp4](assets/video.mp4)
-
-![Homunculus exoskeleton hardware](assets/exo.png)
+<table>
+<tr valign="top">
+<td width="72%"><img src="assets/demo.gif" alt="Demo clip" width="100%"/></td>
+<td width="28%" align="center"><img src="assets/exo.png" alt="Homunculus exoskeleton hardware" width="200"/></td>
+</tr>
+</table>
 
 ## Repository layout
 
