@@ -4,8 +4,8 @@ Whole-body control exoskeleton: printed structure, hall-effect joints, joystick 
 
 <table>
 <tr valign="top">
-<td width="72%"><img src="assets/demo.gif" alt="Demo clip" width="100%"/></td>
-<td width="70%" align="center"><img src="assets/exo.png" alt="Homunculus exoskeleton hardware" width="500"/></td>
+<td width="50%"><img src="assets/demo.gif" alt="Demo clip" width="100%"/></td>
+<td width="70%" align="center"><img src="assets/exo.png" alt="Homunculus exoskeleton hardware" width="200"/></td>
 </tr>
 </table>
 
