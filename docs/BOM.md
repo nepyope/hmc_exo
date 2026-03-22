@@ -1,6 +1,6 @@
 # Homunculus exo BOM
 
-![BOM](BOM.jpeg)
+![BOM](../assets/BOM.jpeg)
 
 ## Screws
 
