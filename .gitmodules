@@ -1,0 +1,3 @@
+[submodule "PCB/elec_martino_joystick_adapter"]
+	path = PCB/elec_martino_joystick_adapter
+	url = https://github.com/pollen-robotics/elec_martino_joystick_adapter.git
