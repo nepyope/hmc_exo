@@ -1,16 +1,12 @@
 # Homunculus Exoskeleton
 
-Wearable upper-body exoskeleton for teleoperation and sensing: printed structure, hall-effect joints, joystick input, and Arduino-side muxing for analog reads. This repo holds CAD (STEP), left/right URDF exports, PCB artifacts, firmware for the sensor mux, and a [bill of materials](docs/BOM.md).
+Whole-body control exoskeleton: printed structure, hall-effect joints, joystick input, and Arduino-side muxing for analog reads. This repo holds CAD (STEP), left/right URDF exports, PCB artifacts, firmware for the sensor mux, and a [bill of materials](docs/BOM.md).
 
 ## Media
 
-<video src="assets/video.mp4" controls playsinline preload="metadata" width="100%"></video>
+**Demo (MP4):** [assets/video.mp4](assets/video.mp4)
 
-If the player does not show in the browser you are using, open the file directly: [`assets/video.mp4`](assets/video.mp4).
-
-<p align="center">
-  <img src="assets/exo.png" alt="Homunculus exoskeleton hardware" width="55%">
-</p>
+![Homunculus exoskeleton hardware](assets/exo.png)
 
 ## Repository layout
 
